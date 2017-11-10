@@ -36,6 +36,8 @@ module.exports = {
       'consistent-return': 0,
       'global-require': 0,
       'linebreak-style': 0,
+      'arrow-body-style': 0,      
+      'indent': 0,
       'no-alert': 0,
       'no-console': 0
     },
