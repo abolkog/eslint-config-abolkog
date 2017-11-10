@@ -8,5 +8,6 @@ This is the Linter rules for react native dev based on [eslint-config-aribnbn](h
 2. Create .eslintrc file
 ```
 {
-    "extends": "eslint-config-abolkog"
+    "extends": "abolkog"
 }
+```

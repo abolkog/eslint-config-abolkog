@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-abolkog",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "React Native Eslint Rules Based on AirBnB",
   "main": "index.js",
   "scripts": {
