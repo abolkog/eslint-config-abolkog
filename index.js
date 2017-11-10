@@ -1,6 +1,7 @@
 module.exports = {
     extends: [
-      './rules/es6'
+        './rules/react',
+        './rules/es6'
     ].map(require.resolve),
     parserOptions: {
       ecmaVersion: 7,
