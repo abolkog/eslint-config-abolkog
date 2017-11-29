@@ -91,9 +91,7 @@ module.exports = {
         ignoreCase: true,
         callbacksLast: false,
         shorthandFirst: false,
-        shorthandLast: false,
-        noSortAlphabetically: false,
-        reservedFirst: true,
+        shorthandLast: false
       }],
       // Prevent React to be incorrectly marked as unused
       // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-uses-react.md
@@ -201,14 +199,6 @@ module.exports = {
         return: true,
       }],
   
-      // Validate whitespace in and around the JSX opening and closing brackets
-      // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/jsx-tag-spacing.md
-      'react/jsx-tag-spacing': ['error', {
-        closingSlash: 'never',
-        beforeSelfClosing: 'always',
-        afterOpening: 'never'
-      }],
-  
       'react/jsx-space-before-closing': ['off', 'always'], // deprecated
   
       // Require that the first prop in a JSX element be on a new line when the element is multiline
@@ -246,15 +236,7 @@ module.exports = {
   
       // warn against using findDOMNode()
       // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-find-dom-node.md
-      'react/no-find-dom-node': 'error',
-  
-      // Prevent void DOM elements from receiving children
-      // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/void-dom-elements-no-children.md
-      'react/void-dom-elements-no-children': 'error',
-  
-      // Prevent usage of Array index in keys
-      // https://github.com/yannickcr/eslint-plugin-react/blob/master/docs/rules/no-array-index-key.md
-      'react/no-array-index-key': 'error',
+      'react/no-find-dom-node': 'error'
     },
   
     settings: {

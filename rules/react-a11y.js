@@ -3,7 +3,7 @@ module.exports = {
   rules: {
     // Enforce that anchors have content
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-has-content.md
-    'jsx-a11y/anchor-has-content': ['error', { components: [''] }],
+    'jsx-a11y/anchor-has-content': ['error', ['']],
 
     // Require ARIA roles to be valid and non-abstract
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md
@@ -28,7 +28,7 @@ module.exports = {
 
     // require that JSX labels use "htmlFor"
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-for.md
-    'jsx-a11y/label-has-for': ['error', { components: ['label'] }],
+    'jsx-a11y/label-has-for': ['error', ['']],
 
     // require that mouseover/out come with focus/blur, for keyboard-only users
     // TODO: evaluate
@@ -47,39 +47,6 @@ module.exports = {
     // TODO: evaluate
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/onclick-has-focus.md
     'jsx-a11y/onclick-has-focus': 0,
-
-    // Enforce that DOM elements without semantic behavior not have interaction handlers
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-static-element-interactions.md
-    'jsx-a11y/no-static-element-interactions': [
-      'error',
-      {
-        handlers: [
-          'onClick',
-          'onMouseDown',
-          'onMouseUp',
-          'onKeyPress',
-          'onKeyDown',
-          'onKeyUp',
-        ],
-      },
-    ],
-
-    // A non-interactive element does not support event handlers (mouse and key handlers)
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-noninteractive-element-interactions.md
-    // 'jsx-a11y/no-noninteractive-element-interactions': ['error', {
-    //   handlers: [
-    //     'onClick',
-    //     'onMouseDown',
-    //     'onMouseUp',
-    //     'onKeyPress',
-    //     'onKeyDown',
-    //     'onKeyUp',
-    //   ]
-    // }],
-
-    // ensure HTML elements do not specify redundant ARIA roles
-    // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/no-redundant-roles.md
-    'jsx-a11y/no-redundant-roles': 'error',
 
     // Enforce that elements with ARIA roles must have all required attributes
     // for that role.
