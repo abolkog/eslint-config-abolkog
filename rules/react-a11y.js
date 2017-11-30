@@ -3,7 +3,7 @@ module.exports = {
   rules: {
     // Enforce that anchors have content
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-has-content.md
-    'jsx-a11y/anchor-has-content': ['error', ['']],
+    'jsx-a11y/anchor-has-content': 'error',
 
     // Require ARIA roles to be valid and non-abstract
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md
@@ -28,7 +28,7 @@ module.exports = {
 
     // require that JSX labels use "htmlFor"
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-for.md
-    'jsx-a11y/label-has-for': ['error', ['']],
+    'jsx-a11y/label-has-for': 'error',
 
     // require that mouseover/out come with focus/blur, for keyboard-only users
     // TODO: evaluate
