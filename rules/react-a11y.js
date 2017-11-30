@@ -3,7 +3,7 @@ module.exports = {
   rules: {
     // Enforce that anchors have content
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/anchor-has-content.md
-    'jsx-a11y/anchor-has-content': 'error',
+    'jsx-a11y/anchor-has-content': ['error', { components: [''] }],
 
     // Require ARIA roles to be valid and non-abstract
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/aria-role.md
@@ -28,10 +28,9 @@ module.exports = {
 
     // require that JSX labels use "htmlFor"
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/label-has-for.md
-    'jsx-a11y/label-has-for': 'error',
+    'jsx-a11y/label-has-for': ['error', { components: ['label'] }],
 
     // require that mouseover/out come with focus/blur, for keyboard-only users
-    // TODO: evaluate
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/mouse-events-have-key-events.md
     'jsx-a11y/mouse-events-have-key-events': 'off',
 
@@ -44,7 +43,6 @@ module.exports = {
     'jsx-a11y/no-onchange': 'off',
 
     // Enforce that elements with onClick handlers must be focusable.
-    // TODO: evaluate
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/onclick-has-focus.md
     'jsx-a11y/onclick-has-focus': 0,
 
@@ -59,7 +57,6 @@ module.exports = {
     'jsx-a11y/role-supports-aria-props': 'error',
 
     // Enforce tabIndex value is not greater than zero.
-    // TODO: evaluate
     // https://github.com/evcohen/eslint-plugin-jsx-a11y/blob/master/docs/rules/tabindex-no-positive.md
     'jsx-a11y/tabindex-no-positive': 0,
 
