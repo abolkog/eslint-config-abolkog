@@ -39,7 +39,11 @@ module.exports = {
       'arrow-body-style': 0,      
       'indent': 0,
       'no-alert': 0,
-      'no-console': 0
+      'no-console': 0,
+      'react/sort-comp': 0,
+      'comma-dangle': 0,
+      'react/jsx-no-bind': 0,
+      'react/jsx-indent-props': 0
     },
     globals: {
       "describe": false,
