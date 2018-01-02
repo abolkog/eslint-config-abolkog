@@ -44,7 +44,8 @@ module.exports = {
       'comma-dangle': 0,
       'react/jsx-no-bind': 0,
       'react/jsx-indent-props': 0,
-      "spaces-comment": 0,
+      "spaced-comment": 0,
+      "padded-blocks": 0,
       "eol-last": 0
     },
     globals: {
